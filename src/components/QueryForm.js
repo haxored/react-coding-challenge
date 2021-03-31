@@ -185,7 +185,7 @@ class QueryForm extends React.Component {
                     <div className="top-text"><p className="font-weight-bold">RESULTS ({totalpages} Pages)</p></div>
                     {results.map(movie => (
                             <div className='res-card ' style={{ display: (movie.Page == key ? 'flex' : 'none') }}>
-                                <div className='res-card-img text-center'><Image src={movie.Poster !== 'N/A' ? movie.Poster.replace('SX300','SY200') : NoImage} alt-image={movie.Title} height={200} /></div>
+                                <div className='res-card-img text-center'><Image src={movie.Poster !== 'N/A' ? movie.Poster.replace('SX300','SY200') : NoImage} alt-text={movie.Title} height={200} /></div>
                                 <div className='res-card-main'>
                                     <p><span className="font-weight-bold">Title: </span>{movie.Title} {this.state.showPage} {movie.Page}</p>
                                     <p><span className="font-weight-bold">Year: </span>{movie.Year}</p>
