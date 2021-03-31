@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Form, Button, Alert, Image } from 'react-bootstrap';
 import { connect } from "react-redux";
 import NoImage from '../img/others/no-image-available.jpg'
+import Loader from '../img/others/loader.svg'
 import { fetchResults } from "./ResultActions";
 
 class QueryForm extends React.Component {
@@ -172,7 +173,7 @@ class QueryForm extends React.Component {
                     <div className="p-3">
                         <div className='top-text'><p className="font-weight-bold">RESULTS</p></div>
                         <div className='about'>
-                            <div>Loading...</div>
+                            <div><Image src={Loader} alt="loader" fluid /></div>
                         </div>
                     </div>
 
