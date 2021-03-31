@@ -66,8 +66,6 @@ class QueryForm extends React.Component {
         this.props.dispatch(fetchResults(apiurl, httpmethod));
         this.setState({
             showPage: 1,
-        });
-        this.setState({
             task: "submitted"
         });
     }
