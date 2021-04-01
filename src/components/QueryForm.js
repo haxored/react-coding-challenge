@@ -186,7 +186,7 @@ class QueryForm extends React.Component {
                             <div className='res-card ' style={{ display: (movie.Page == key ? 'flex' : 'none') }}>
                                 <div className='res-card-img text-center'><Image src={movie.Poster !== 'N/A' ? movie.Poster.replace('SX300','SY200') : NoImage} alt-text={movie.Title} height={200} /></div>
                                 <div className='res-card-main'>
-                                    <p><span className="font-weight-bold">Title: </span>{movie.Title} {this.state.showPage} {movie.Page}</p>
+                                    <p><span className="font-weight-bold">Title: </span>{movie.Title}</p>
                                     <p><span className="font-weight-bold">Year: </span>{movie.Year}</p>
                                     <p><span className="font-weight-bold">Type: </span>{movie.Type}</p>
                                     <div className="res-card-plot pl-3 font-weight-bold"> Plot:</div><div className="res-card-plot pl-3">{movie.Plot}</div>
